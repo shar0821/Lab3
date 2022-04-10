@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <meta name="viewport" content="witdh:device-witdh,initial-scale:1.0">
+        <header>Techfest Registration Form</header>
+        <br>
+        <div class="formelement">
+            <form class="registration">
+            <label for="Name">Name:</label>
+            <input onfocus="a()" onblur="b()" type="text" id="textstyle" name="Name" onfocus="focus()">
+            <br>
+            <label for="Email">E-mail:</label>
+            <input onfocus="a()" onblur="b()" type="mail" id="textstyle" name="Email"><br>
+            <label for="date">Date:</label>
+            <input onfocus="a()" onblur="b()" type="date" id="textstyle" name="date"> 
+            <br>
+            
+            <label for="dept">Department:</label>
+            <input onfocus="a()" onblur="b()" type="text" id="textstyle" name="dept"><br>
+            <label for="add">Address:</label>
+            <input onfocus="a()" onblur="b()" type="text" id="textstyle" name="add"><br>
+            <label for="select">Event Type:</label>
+            <select name="select" class="selectstyle">
+                <option>
+                    Select Option
+                </option>
+                <option>
+                   Technical Event
+                </option>
+                <option>
+                   Workshop
+                </option>
+                <option>
+                    Paper Presentation
+                </option>
+            </select>
+            <br>
+            <label for="Hobbies">Hobbies:</label>
+            <br>
+            <input onfocus="a()" onblur="b()" type="checkbox" name="Hobbies" /><span>Chess</span>
+            <input onfocus="a()" onblur="b()" type="checkbox" name="Hobbies" /><span>Cricket</span>
+            <input onfocus="a()" onblur="b()" type="checkbox" name="Hobbies" /><span>Hockey</span>
+            <br>
+            <br>
+            <label for="Gender">Gender:</label>
+            <br>
+            <input onfocus="a()" onblur="b()" type="radio" name="Gender" /><span>Male</span>
+            <input onfocus="a()" onblur="b()" type="radio" name="Gender" /><span>Female</span>
+            <input onfocus="a()" onblur="b()" type="radio" name="Gender" /><span>None</span>
+            <label for="textarea">Questions for the workshop:</label>
+            <br>
+            <textarea name="textarea" cols="30" rows="10" placeholder="" dropzone="copy">
+
+            </textarea>
+            <div>
+                <div draggable="true">
+                   A
+                </div>
+                <div draggable="true">
+                   B
+                </div>
+                <div draggable="true">
+                   C
+                </div>
+            </div>
+        </form>
+        </div>
+        <button id="Formval" onclick="manageInput()">Submit Form</button>
+        <script src="script.js"></script>
+        <button onclick="location.reload()"> Reset</button>
+        
+</body>
+</html>
